@@ -1,0 +1,113 @@
+@import "compass/css3";
+
+// Mixins
+@mixin center-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+*, 
+*:before, 
+*:after { @include box-sizing(border-box); }
+  
+body {
+  background-color: #e42d20;
+}
+
+.clock {
+  @include center-element;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 105px;
+  box-shadow: inset 0 -5px 20px 5px #CA6C64,
+                    0 25px 25px 0 rgba(0,0,0,.5);
+  background-color: #eedad8;
+}
+  
+.c1 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  margin: 50px 0 0 50px;
+  border-radius: 100%;
+  box-shadow: 0 35px 30px 0 darken(#CA6C64,0%);
+  @include background-image(linear-gradient(top, #CA6C64, #e1c2bd, #D8A49E));
+  background-color: #e1c2bd;
+}
+  
+.c2 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 25px auto 0;
+  border-radius: 100%;
+  box-shadow: inset 0 8px 24px 5px rgba(0,0,0,.6),
+                    0 3px 10px 0 white;
+  background-color: #e42d20;
+}
+  
+.pin {
+  z-index: 4;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 120px 0 0 128px;
+  border-radius: 100%;
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,.5);
+  @include background-image(linear-gradient(top, #EEDAD8, #CA6C64));
+  background-color: #eedad8;
+}    
+.inner {
+  position: relative;
+  width: 30px; 
+  height: 30px;
+  margin: 10px auto 0;
+  border-radius: 100%;
+  box-shadow: inset 0 8px 15px 0 rgba(167, 23, 10, .4);
+  background-color:  #E1C2BD;
+}
+
+#sec,
+#min,
+#hr {
+  position: absolute;
+  transform: rotate(0deg);
+}
+
+#sec {
+  z-index: 3;
+  width: 8px;
+  height: 170px;
+  margin: 105px 0 0 148px;
+  border-radius: 4px;
+  @include transform-origin(5px, 40px);
+  box-shadow: 4px -4px 10px 0 rgba(0,0,0,.4);
+  background-color: #E1C2BD;
+}
+
+#min {
+  z-index: 1;
+  width: 25px;
+  height: 140px;
+  margin: 22px 0 0 138px;
+  border-radius: 30px;
+  @include transform-origin(15px, 130px);
+  box-shadow: 8px 8px 12px 0 rgba(0,0,0,.5);
+  background-color: #442319;
+}
+
+#hr {
+  z-index: 2;
+  width: 25px;
+  height: 90px;
+  margin: 70px 0 0 138px;
+  border-radius: 30px;
+  @include transform-origin(15px, 85px);
+  box-shadow: 4px -4px 12px 0 rgba(0,0,0,.5);
+  background-color: #442319;
+}
+
