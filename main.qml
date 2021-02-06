@@ -48,27 +48,25 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.0
-import QtQuick.Window 2.0
-import QtWebEngine 1.0
+import QtQuick 2.2
+import QtQuick.Window 2.1
+import QtWebEngine 1.10
 import QtQuick.Controls 2.15
 
 Window {
     width: 800
     height: 480
     visible: true
+    id: app
     WebEngineView {
         anchors.fill: parent
-        anchors.rightMargin: 57
-        url: "qrc:/pure-css-watch-animation/dist/index.html"
+        //anchors.rightMargin: 57
+        url: "qrc:/neu-times/dist/index.html"
 
-        Button {
-            id: button1
-            x: 749
-            y: 210
-            width: 49
-            height: 40
-            text: qsTr("Button")
-        }
+        onContextMenuRequested: {
+                request.accepted = true;
+            }
     }
+
+    NavigationPanel{ id: navigationPanel }
 }

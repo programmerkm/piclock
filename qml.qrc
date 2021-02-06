@@ -22,9 +22,6 @@
         <file>clock-snap/dist/index.html</file>
         <file>clock-snap/dist/script.js</file>
         <file>clock-snap/dist/style.css</file>
-        <file>css-variable-powered-clock/dist/index.html</file>
-        <file>css-variable-powered-clock/dist/script.js</file>
-        <file>css-variable-powered-clock/dist/style.css</file>
         <file>cube-clock/dist/index.html</file>
         <file>cube-clock/dist/script.js</file>
         <file>cube-clock/dist/style.css</file>
@@ -62,5 +59,20 @@
         <file>weekly-pen-1clocks/dist/index.html</file>
         <file>weekly-pen-1clocks/dist/script.js</file>
         <file>weekly-pen-1clocks/dist/style.css</file>
+        <file>NavigationPanel.qml</file>
+        <file>images/btn_next.png</file>
+        <file>images/btn_previous.png</file>
+        <file>Button.qml</file>
+        <file>DialogButton.qml</file>
+        <file>QuitDialog.qml</file>
+        <file>neu-times/dist/index.html</file>
+        <file>neu-times/dist/script.js</file>
+        <file>neu-times/dist/style.css</file>
+        <file>react-morph-clock/dist/index.html</file>
+        <file>react-morph-clock/dist/script.js</file>
+        <file>react-morph-clock/dist/style.css</file>
+        <file>rotate-clock-css-only/dist/index.html</file>
+        <file>rotate-clock-css-only/dist/script.js</file>
+        <file>rotate-clock-css-only/dist/style.css</file>
     </qresource>
 </RCC>
