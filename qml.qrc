@@ -62,7 +62,7 @@
         <file>NavigationPanel.qml</file>
         <file>images/btn_next.png</file>
         <file>images/btn_previous.png</file>
-        <file>Button.qml</file>
+        <file>NavButton.qml</file>
         <file>DialogButton.qml</file>
         <file>QuitDialog.qml</file>
         <file>neu-times/dist/index.html</file>
@@ -74,5 +74,16 @@
         <file>rotate-clock-css-only/dist/index.html</file>
         <file>rotate-clock-css-only/dist/script.js</file>
         <file>rotate-clock-css-only/dist/style.css</file>
+        <file>engine.js</file>
+        <file>digital-clock/img/alarm_btn.png</file>
+        <file>digital-clock/img/alarm_dark.jpg</file>
+        <file>digital-clock/img/alarm_light.jpg</file>
+        <file>digital-clock/img/bg.jpg</file>
+        <file>digital-clock/img/close.png</file>
+        <file>images/btn_about.png</file>
+        <file>images/btn_alarm.png</file>
+        <file>images/btn_reboot.png</file>
+        <file>images/btn_shutdown.png</file>
+        <file>images/btn_theme.png</file>
     </qresource>
 </RCC>

@@ -50,23 +50,89 @@
 
 import QtQuick 2.2
 import QtQuick.Window 2.1
-import QtWebEngine 1.10
+import QtWebEngine 1.5
 import QtQuick.Controls 2.15
+import "engine.js" as Engine
 
 Window {
     width: 800
     height: 480
     visible: true
     id: app
+
+    property bool firstLoadComplete: false
+
+    function updateWebView() {
+        clockwebengine.url = Engine.getURL()
+    }
+
+    function getNext() {
+        Engine.getNext()
+        updateWebView()
+    }
+
+    function getPrevious() {
+        Engine.getPrevious()
+        updateWebView()
+    }
+
     WebEngineView {
+        id:clockwebengine
         anchors.fill: parent
         //anchors.rightMargin: 57
-        url: "qrc:/neu-times/dist/index.html"
+        url: Engine.getURL()
 
         onContextMenuRequested: {
-                request.accepted = true;
+            request.accepted = true;
+        }
+
+        onLoadingChanged: function(loadRequest) {
+            if (loadRequest.status === WebEngineView.LoadSucceededStatus) {
+                // Debounce the showing of the web content, so images are more likely
+                // to have loaded completely.
+                busy.running = true
+                showTimer.start()
             }
+        }
+
+        Timer {
+            id: showTimer
+            interval: 500
+            repeat: false
+            onTriggered: {
+                clockwebengine.show(true)
+                firstLoadComplete = true
+            }
+        }
+
+        Rectangle {
+            id: webViewPlaceholder
+            anchors.fill: parent
+            z: 1
+            color: "white"
+
+            BusyIndicator {
+                id: busy
+                anchors.centerIn: parent
+            }
+        }
+
+
+        function show(show) {
+            if (show === true) {
+                busy.running = false
+                webViewPlaceholder.visible = false
+            } else {
+                webViewPlaceholder.visible = true
+                busy.running = true
+            }
+        }
+
     }
 
     NavigationPanel{ id: navigationPanel }
+
+    Component.onCompleted: {
+        navigationPanel.checkOrientation()
+    }
 }
