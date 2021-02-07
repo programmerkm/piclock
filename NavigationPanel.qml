@@ -29,15 +29,45 @@ Grid {
         }
     }
 
-    Button {
-            id: nextButton
-            imageSource: "images/btn_next.png"
+    NavButton {
+        id: nextButton
+        imageSource: "images/btn_next.png"
+        onClicked:app.getNext()
+    }
 
-        }
+    NavButton {
+        id: prevButton
+        imageSource: "images/btn_previous.png"
+        onClicked: app.getPrevious()
+    }
 
-        Button {
-            id: prevButton
-            imageSource: "images/btn_previous.png"
+    NavButton {
+        id: themeButton
+        imageSource: "images/btn_theme.png"
+        onClicked: app.getPrevious()
+    }
 
-        }
+    NavButton {
+        id: alarmButton
+        imageSource: "images/btn_alarm.png"
+        onClicked: app.getPrevious()
+    }
+
+    NavButton {
+        id: rebootButton
+        imageSource: "images/btn_reboot.png"
+        onClicked: app.getPrevious()
+    }
+
+    NavButton {
+        id: shutdownButton
+        imageSource: "images/btn_shutdown.png"
+        onClicked: app.getPrevious()
+    }
+
+    NavButton {
+        id: aboutButton
+        imageSource: "images/btn_about.png"
+        onClicked: app.getPrevious()
+    }
 }
