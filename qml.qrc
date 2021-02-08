@@ -94,5 +94,6 @@
         <file>images/gears.svg</file>
         <file>images/ui-power.svg</file>
         <file>images/ui-theme.svg</file>
+        <file>FooterBar.qml</file>
     </qresource>
 </RCC>

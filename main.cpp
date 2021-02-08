@@ -51,10 +51,16 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <qtwebengineglobal.h>
+#include "qlocaldevice.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setOrganizationName("QtExamples");
+    QCoreApplication::setOrganizationName("PiClock");
+    //register our form processor class as singleton as we dont want to create memory overheads
+      QScopedPointer<QLocalDevice> singletonprocessor(new QLocalDevice);
+      qmlRegisterSingletonInstance("com.company.localdevice", 1, 0, "LocalDevice", singletonprocessor.get()); //register our singleton
+
+
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QtWebEngine::initialize();

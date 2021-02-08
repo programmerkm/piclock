@@ -53,6 +53,7 @@ import QtQuick.Window 2.1
 import QtWebEngine 1.5
 import QtQuick.Controls 2.3
 import QtQuick.Extras 1.4
+import com.company.localdevice 1.0
 import "engine.js" as Engine
 
 ApplicationWindow {
@@ -77,10 +78,19 @@ ApplicationWindow {
         updateWebView()
     }
 
+    function reboot()
+    {
+        LocalDevice.reboot()
+    }
+
+    function powerOff()
+    {
+        LocalDevice.powerOff()
+    }
+
     WebEngineView {
         id:clockwebengine
         anchors.fill: parent
-        //anchors.rightMargin: 57
         url: Engine.getURL()
 
         onContextMenuRequested: {
@@ -89,8 +99,6 @@ ApplicationWindow {
 
         onLoadingChanged: function(loadRequest) {
             if (loadRequest.status === WebEngineView.LoadSucceededStatus) {
-                // Debounce the showing of the web content, so images are more likely
-                // to have loaded completely.
                 busy.running = true
                 showTimer.start()
             }
@@ -131,9 +139,8 @@ ApplicationWindow {
 
     }
 
-    NavToolbar{ id: navigationPanel }
+    footer:FooterBar{ id: navigationPanel }
 
     Component.onCompleted: {
-        //navigationPanel.checkOrientation()
     }
 }
