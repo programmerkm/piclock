@@ -51,10 +51,11 @@
 import QtQuick 2.2
 import QtQuick.Window 2.1
 import QtWebEngine 1.5
-import QtQuick.Controls 2.15
+import QtQuick.Controls 2.3
+import QtQuick.Extras 1.4
 import "engine.js" as Engine
 
-Window {
+ApplicationWindow {
     width: 800
     height: 480
     visible: true
@@ -130,9 +131,9 @@ Window {
 
     }
 
-    NavigationPanel{ id: navigationPanel }
+    NavToolbar{ id: navigationPanel }
 
     Component.onCompleted: {
-        navigationPanel.checkOrientation()
+        //navigationPanel.checkOrientation()
     }
 }

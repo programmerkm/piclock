@@ -85,5 +85,14 @@
         <file>images/btn_reboot.png</file>
         <file>images/btn_shutdown.png</file>
         <file>images/btn_theme.png</file>
+        <file>NavToolbar.qml</file>
+        <file>images/addons.svg</file>
+        <file>images/alarm.svg</file>
+        <file>images/arrow-circle-left-outline.svg</file>
+        <file>images/arrow-circle-right-outline.svg</file>
+        <file>images/bell-outline.svg</file>
+        <file>images/gears.svg</file>
+        <file>images/ui-power.svg</file>
+        <file>images/ui-theme.svg</file>
     </qresource>
 </RCC>
