@@ -42,22 +42,6 @@ Item {
             }
 
             ToolButton {
-                id: alarmButton
-                width: 32
-                height:32
-                icon.source: "/images/alarm.svg"
-                enabled: false
-            }
-
-            ToolButton {
-                id: themeButton
-                width: 32
-                height:32
-                icon.source: "/images/ui-theme.svg"
-                enabled: false
-            }
-
-            ToolButton {
                 id: rebootButton
                 width: 32
                 height:32

@@ -1,4 +1,6 @@
 var clockPositions = [
+            "qrc:/animated-digital-led-clock/dist/index.html",
+            "qrc:/pomodoro-clock/dist/index.html",
             "qrc:/neu-times/dist/index.html",
             "qrc:/pie-time/dist/index.html",
             "qrc:/analog-digital-clock/dist/index.html",
@@ -6,6 +8,7 @@ var clockPositions = [
             "qrc:/pure-html-and-css-braun-clock/dist/index.html",
             "qrc:/clock/dist/index.html",
             "qrc:/cube-clock/dist/index.html",
+            "qrc:/css-variable-powered-clock/dist/index.html",
             "qrc:/digital-clock/dist/index.html",
             "qrc:/digital-clock-3december/dist/index.html",
             "qrc:/digital-clock-with-vue-js/dist/index.html",
@@ -13,13 +16,13 @@ var clockPositions = [
             "qrc:/react-morph-clock/dist/index.html",
             "qrc:/realistic-minimal-css-clock/dist/index.html",
             "qrc:/rotate-clock-css-only/dist/index.html",
-            "qrc:/canvas-clock/dist/index.html",
-            "qrc:/canvasclock/dist/index.html",
-            "qrc:/clock-snap/dist/index.html",
             "qrc:/clock-3d/dist/index.html",
-            "qrc:/rotating-clock/dist/index.html",
-            "qrc:/weekly-pen-1clocks/dist/index.html",
-            "qrc:/analog-clock/dist/index.html"
+            "qrc:/analog-binary-clock/dist/index.html",
+            "qrc:/analog-clock/dist/index.html",
+            "qrc:/clocks-and-calendars/dist/index.html",
+            "qrc:/glitch-clock/dist/index.html",
+            "qrc:/rounded-clock-main/index.html",
+            "qrc:/thooClock/index.html"
         ]
 
 var currentClockIndex = 0

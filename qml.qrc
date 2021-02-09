@@ -7,21 +7,12 @@
         <file>analog-digital-clock/dist/index.html</file>
         <file>analog-digital-clock/dist/script.js</file>
         <file>analog-digital-clock/dist/style.css</file>
-        <file>canvas-clock/dist/index.html</file>
-        <file>canvas-clock/dist/script.js</file>
-        <file>canvas-clock/dist/style.css</file>
-        <file>canvasclock/dist/index.html</file>
-        <file>canvasclock/dist/script.js</file>
-        <file>canvasclock/dist/style.css</file>
         <file>clock/dist/index.html</file>
         <file>clock/dist/script.js</file>
         <file>clock/dist/style.css</file>
         <file>clock-3d/dist/index.html</file>
         <file>clock-3d/dist/script.js</file>
         <file>clock-3d/dist/style.css</file>
-        <file>clock-snap/dist/index.html</file>
-        <file>clock-snap/dist/script.js</file>
-        <file>clock-snap/dist/style.css</file>
         <file>cube-clock/dist/index.html</file>
         <file>cube-clock/dist/script.js</file>
         <file>cube-clock/dist/style.css</file>
@@ -48,17 +39,6 @@
         <file>react-dailyui014timer/dist/style.css</file>
         <file>realistic-minimal-css-clock/dist/index.html</file>
         <file>realistic-minimal-css-clock/dist/style.css</file>
-        <file>rotating-clock/dist/index.html</file>
-        <file>rotating-clock/dist/script.js</file>
-        <file>rotating-clock/dist/style.css</file>
-        <file>seiko-clock/dist/index.html</file>
-        <file>seiko-clock/dist/style.css</file>
-        <file>svg-clock-ui/dist/index.html</file>
-        <file>svg-clock-ui/dist/script.js</file>
-        <file>svg-clock-ui/dist/style.css</file>
-        <file>weekly-pen-1clocks/dist/index.html</file>
-        <file>weekly-pen-1clocks/dist/script.js</file>
-        <file>weekly-pen-1clocks/dist/style.css</file>
         <file>NavigationPanel.qml</file>
         <file>images/btn_next.png</file>
         <file>images/btn_previous.png</file>
@@ -95,5 +75,39 @@
         <file>images/ui-power.svg</file>
         <file>images/ui-theme.svg</file>
         <file>FooterBar.qml</file>
+        <file>Configure.qml</file>
+        <file>analog-binary-clock/dist/index.html</file>
+        <file>analog-binary-clock/dist/script.js</file>
+        <file>analog-binary-clock/dist/style.css</file>
+        <file>animated-digital-led-clock/dist/index.html</file>
+        <file>animated-digital-led-clock/dist/script.js</file>
+        <file>animated-digital-led-clock/dist/style.css</file>
+        <file>clocks-and-calendars/dist/index.html</file>
+        <file>clocks-and-calendars/dist/script.js</file>
+        <file>clocks-and-calendars/dist/style.css</file>
+        <file>glitch-clock/dist/index.html</file>
+        <file>glitch-clock/dist/script.js</file>
+        <file>glitch-clock/dist/style.css</file>
+        <file>pomodoro-clock/dist/index.html</file>
+        <file>pomodoro-clock/dist/script.js</file>
+        <file>pomodoro-clock/dist/style.css</file>
+        <file>thooClock/css/main.css</file>
+        <file>thooClock/img/vignette.png</file>
+        <file>thooClock/js/jquery.thooClock.js</file>
+        <file>thooClock/alarm.mp3</file>
+        <file>thooClock/alarm.ogg</file>
+        <file>thooClock/bower.json</file>
+        <file>thooClock/index.html</file>
+        <file>thooClock/README.md</file>
+        <file>rounded-clock-main/app.js</file>
+        <file>rounded-clock-main/DS-DIGI.TTF</file>
+        <file>rounded-clock-main/index.html</file>
+        <file>rounded-clock-main/LICENSE</file>
+        <file>rounded-clock-main/README.md</file>
+        <file>rounded-clock-main/style.css</file>
+        <file>pomodoro-clock/dist/desk-white-black-header.jpg</file>
+        <file>css-variable-powered-clock/dist/index.html</file>
+        <file>css-variable-powered-clock/dist/script.js</file>
+        <file>css-variable-powered-clock/dist/style.css</file>
     </qresource>
 </RCC>
