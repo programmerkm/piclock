@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = picklock
+TARGET = piclock
 
 QT += quick webengine quickcontrols2
 CONFIG += c++11
