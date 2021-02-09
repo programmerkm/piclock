@@ -37,7 +37,7 @@ void QLocalDevice::powerOff()
 {
     qDebug() << "Entering Function Name: " << Q_FUNC_INFO;
     sync();
-    //::reboot(RB_POWER_OFF);
+    ::reboot(RB_POWER_OFF);
     system("shutdown now");
     qWarning("powerOff returned");
 }
