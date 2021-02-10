@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = piclock
 
-QT += quick quickcontrols2
+QT += quick quickcontrols2 webengine
 CONFIG += c++11
 
 SOURCES += main.cpp \
