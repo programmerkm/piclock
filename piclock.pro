@@ -6,8 +6,6 @@ CONFIG += c++11
 
 SOURCES += main.cpp \
     qlocaldevice.cpp
- \
-    qlocaldevice.cpp
 
 RESOURCES += qml.qrc
 
