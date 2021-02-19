@@ -55,6 +55,7 @@
 
 int main(int argc, char *argv[])
 {
+    qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
     QCoreApplication::setOrganizationName("PiClock");
     //register our form processor class as singleton as we dont want to create memory overheads
       QScopedPointer<QLocalDevice> singletonprocessor(new QLocalDevice);
