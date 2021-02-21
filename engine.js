@@ -3,7 +3,8 @@ var clockPositions = [
             "qrc:/pomodoro-clock/dist/index.html",
             "https://covid19.who.int/",
             "https://www.flightradar24.com",
-            "https://www.heathrow.com/arrivals"
+            "https://www.heathrow.com/arrivals",
+            "http://raildar.co.uk/radar.html"
         ]
 
 var currentClockIndex = 0
