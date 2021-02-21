@@ -109,5 +109,8 @@
         <file>css-variable-powered-clock/dist/index.html</file>
         <file>css-variable-powered-clock/dist/script.js</file>
         <file>css-variable-powered-clock/dist/style.css</file>
+        <file>images/terminal.svg</file>
+        <file>images/reboot.svg</file>
+        <file>AppTheme.qml</file>
     </qresource>
 </RCC>

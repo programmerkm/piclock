@@ -1,7 +1,8 @@
 var clockPositions = [
             "qrc:/animated-digital-led-clock/dist/index.html",
             "qrc:/pomodoro-clock/dist/index.html",
-            "https://covid19.who.int/"
+            "https://covid19.who.int/",
+            "https://www.youtube.com/channel/UC936vJaPNT0QZI6McJhCXmA"
         ]
 
 var currentClockIndex = 0

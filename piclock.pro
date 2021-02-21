@@ -22,3 +22,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     qlocaldevice.h
+
+DISTFILES += \
+    qmldir

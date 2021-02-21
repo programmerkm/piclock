@@ -57,8 +57,8 @@ import com.company.localdevice 1.0
 import "engine.js" as Engine
 
 ApplicationWindow {
-    width: 800
-    height: 480
+    width: Screen.width
+    height: Screen.height
     visible: true
     id: app
 
