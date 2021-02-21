@@ -4,7 +4,7 @@ var clockPositions = [
             "https://covid19.who.int/",
             "https://www.flightradar24.com",
             "https://www.heathrow.com/arrivals",
-            "http://raildar.co.uk/radar.html"
+            "https://raildar.co.uk/radar.html"
         ]
 
 var currentClockIndex = 0
