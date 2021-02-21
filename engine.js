@@ -2,7 +2,8 @@ var clockPositions = [
             "qrc:/animated-digital-led-clock/dist/index.html",
             "qrc:/pomodoro-clock/dist/index.html",
             "https://covid19.who.int/",
-            "https://www.youtube.com/channel/UC936vJaPNT0QZI6McJhCXmA"
+            "https://www.flightradar24.com",
+            "https://www.heathrow.com/arrivals"
         ]
 
 var currentClockIndex = 0
