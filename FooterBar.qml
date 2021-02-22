@@ -44,7 +44,6 @@ ToolBar {
             onClicked: app.terminal()
         }
 
-
         ToolButton {
             id: rebootButton
             width: AppTheme.iconButtonWidth
@@ -59,6 +58,12 @@ ToolBar {
             height:AppTheme.iconButtonHeight
             icon.source: "/images/ui-power.svg"
             onClicked: app.powerOff()
+        }
+
+        TextField {
+            id:customUrl
+            placeholderText: qsTr("Enter url")
+            onEditingFinished: clockwebengine.url="https://www."+customUrl.text
         }
     }
 }
