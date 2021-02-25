@@ -15,42 +15,42 @@ document.addEventListener('DOMContentLoaded', function() {
   var _hours = document.querySelectorAll('.hours');
   var _minutes = document.querySelectorAll('.minutes');
   var _seconds = document.querySelectorAll('.seconds');
-  
+  var date;
+
   setInterval(function() {
-    var date = new Date();
-    var hours = date.getHours(), minutes = date.getMinutes(), seconds = date.getSeconds();  
-    
-    setNumber(_hours[0], Math.floor(hours/10), 1);
-    setNumber(_hours[1], hours%10, 1);
+    date = new Date();
 
-    setNumber(_minutes[0], Math.floor(minutes/10), 1);
-    setNumber(_minutes[1], minutes%10, 1);
+    setNumber(_hours[0], Math.floor(date.getHours()/10), 1);
+    setNumber(_hours[1], date.getHours()%10, 1);
 
-    setNumber(_seconds[0], Math.floor(seconds/10), 1);
-    setNumber(_seconds[1], seconds%10, 1);
+    setNumber(_minutes[0], Math.floor(date.getMinutes()/10), 1);
+    setNumber(_minutes[1], date.getMinutes()%10, 1);
+
+    setNumber(_seconds[0], Math.floor(date.getSeconds()/10), 1);
+    setNumber(_seconds[1], date.getSeconds()%10, 1);
   }, 1000);
 });
 
 var setNumber = function(digit, number, on) {
-  var segments = digit.querySelectorAll('.segment');
-  var current = parseInt(digit.getAttribute('data-value'));
+  //var segments = digit.querySelectorAll('.segment');
+  //var current = parseInt(digit.getAttribute('data-value'));
 
   // only switch if number has changed or wasn't set
-  if (!isNaN(current) && current != number) {
+  if (!isNaN(parseInt(digit.getAttribute('data-value'))) && (parseInt(digit.getAttribute('data-value'))) != number) {
     // unset previous number
-    digitSegments[current].forEach(function(digitSegment, index) {
+    digitSegments[parseInt(digit.getAttribute('data-value'))].forEach(function(digitSegment, index) {
       setTimeout(function() {
-        segments[digitSegment-1].classList.remove('on');
+        digit.querySelectorAll('.segment')[digitSegment-1].classList.remove('on');
       }, index*45)
     });
   }
   
-  if (isNaN(current) || current != number) {
+  if (isNaN(parseInt(digit.getAttribute('data-value'))) || (parseInt(digit.getAttribute('data-value'))) != number) {
     // set new number after
     setTimeout(function() {
       digitSegments[number].forEach(function(digitSegment, index) {
         setTimeout(function() {
-          segments[digitSegment-1].classList.add('on');
+          digit.querySelectorAll('.segment')[digitSegment-1].classList.add('on');
         }, index*45)
       });
     }, 250);
